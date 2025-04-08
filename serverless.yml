@@ -1,0 +1,19 @@
+service: appealdisabledadsaccount
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+   
+functions:
+  appealAdAccount:
+    handler: handler.appealAdAccount
+    events:
+      - http:
+          path: appeal
+          method: post
+          cors: true
+
+plugins:
+  - serverless-offline
