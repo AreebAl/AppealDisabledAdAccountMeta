@@ -15,5 +15,13 @@ functions:
           method: post
           cors: true
 
+  appealBusinessManager:
+    handler: handler.appealBusinessManager
+    events:
+      - http:
+          path: appeal/bm
+          method: post
+          cors: true          
+
 plugins:
   - serverless-offline

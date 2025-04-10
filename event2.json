@@ -1,0 +1,8 @@
+{
+    "body": {
+        "businessManagerId": "1234567890",
+        "parentBusinessId": "123456789",
+        "accessToken": "EAAJ...",
+        "appId": "987654321"
+    }
+}
